@@ -1,11 +1,31 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-sqlalchemy==2.0.23
-asyncpg==0.29.0
-alembic==1.12.1
-python-multipart==0.0.6
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
-python-dotenv==1.0.0
-pydantic-settings==2.1.0
-email-validator==2.1.0
+# FastAPI и сервер Uvicorn
+fastapi~=0.115.11
+uvicorn
+alembic
+# Асинхронная работа с БД и Redis
+redis==5.2.1
+sqlalchemy~=2.0.38
+asyncpg==0.30.0
+psycopg2
+
+
+# JWT-токены и безопасность
+pyjwt
+requests
+python-multipart
+passlib[bcrypt]
+bcrypt==3.2.0
+
+qrcode
+
+# Дополнительные библиотеки
+python-dotenv~=1.0.1
+pydantic~=2.10.6
+pydantic[email]
+pydantic_core
+pydantic_settings
+starlette
+python-jose
+pytest~=8.3.5
+httpx~=0.28.1
+pytest
